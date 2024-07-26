@@ -1,0 +1,124 @@
+cv:
+  name: Joe Roselli
+  location: New York
+  email: jobs@inbox.vin
+  phone: tel:+1-201-579-3139
+  website: https://Crypta.dev/
+  social_networks:
+    - network: LinkedIn
+      username: joe-roselli
+    - network: GitHub
+      username: bwgh0
+  sections:
+    Summary:
+    - 'Senior Software Engineer and Blockchain Developer with 10+ years of experience. Architected systems managing $\mathdollar$2B+ in assets, boosted efficiencies by 86%, and drove $\mathdollar$10M+ in blockchain transactions. Reduced costs by 30-40% and generated 200%+ revenue growth across fintech and blockchain projects. Proficient in 15+ programming languages and frameworks.'
+    skills:
+    - label: Languages
+      details: Solidity, Python, JavaScript, TypeScript, Java, HTML5, CSS3, SQL, NoSQL, Swift
+    - label: Frameworks & Libraries
+      details: React, Node.js, Express.js, Django, Flask, TensorFlow, PyTorch, jQuery, Sass, TailwindCSS, Next.js
+    - label: Blockchain & Cryptocurrency
+      details: Ethereum, Bitcoin, Solana, Avalanche, Smart Contracts, DApps, Web3.js, Truffle, Brownie, Hardhat, MetaMask, NFTs, DeFi, Tokenization
+    - label: Data
+      details: PostgreSQL, MySQL, MongoDB, Microsoft SQL Server, DynamoDB, Machine Learning, Artificial Intelligence, Tableau
+    - label: Cloud & DevOps
+      details: AWS (Lambda, EC2, S3, RDS, CloudFormation, Elastic Beanstalk, Amplify, SQS, SNS), Google Cloud Platform, Docker, Kubernetes, Jenkins, GitLab CI/CD, Terraform
+    - label: Tools & Methodologies
+      details: Git, JIRA, Confluence, Agile, Scrum, Kanban, Test-Driven Development (TDD), Continuous Integration/Continuous Deployment (CI/CD), Microservices Architecture, RESTful APIs, GraphQL
+    # - label: Frontend
+    #   details: Single Page Applications (SPA), Progressive Web Apps (PWA), Responsive Design, Webpack, Babel, ESLint
+    # - label: Backend
+    #   details: API Design, Microservices, Serverless Architecture, Message Queues (RabbitMQ)
+    # - label: Security
+    #   details: OAuth, JWT, HTTPS/SSL, Two-Factor Authentication, Encryption, Penetration Testing, OWASP
+    # - label: Data & Analytics
+    #   details: Big Data, Data Mining, Machine Learning, Artificial Intelligence, Data Visualization, Tableau, Power BI
+    - label: Concepts
+      details: Distributed Systems, Scalability, High Availability, Design Patterns, Algorithms, Large Language Models, Cloud Computing
+
+    experience:
+      - company: Celsius Network
+        position: Senior Software Engineer
+        location: Hoboken, NJ (Remote)
+        start_date: 2020
+        end_date: present
+        highlights:
+          - Architected a new CRM system and backend to manage a $\mathdollar$2B loan book, leveraging RPAs, Corezoid, and Mambu composable banking engine
+          - Implemented an automated JavaScript margin call engine, boosting department efficiency by 86%
+          - Created a Coin Pricing System Oracle in Python using AWS Lambda and achieving 99.96% price stability and accuracy for various cryptocurrencies
+
+      - company: Axispoint
+        position: Senior Blockchain Developer & Software Engineer
+        location: New York, NY (Remote)
+        start_date: 2021
+        end_date: 2023
+        highlights:
+          - Designed and implemented on-chain and off-chain blockchain infrastructure for token data tracking
+          - Authored smart contracts for Dynamic NFTs and NFT Marketplace, achieving 99.97% test coverage and 9/10 Hacken security score
+          - Developed a unique NFT land coordinate generation algorithm using Python, Brownie, AWS Lambda, and Moralis
+
+      - company: South State Bank
+        position: Back End Developer
+        location: Pawleys Island, SC
+        start_date: 2018
+        end_date: 2020
+        highlights:
+          - Constructed CRM platform integrating ZenDesk, iTeller dashboards, and RPA systems using Java and PostgreSQL
+          - Exceeded project time estimates by 18% consistently through efficient development practices
+          - Optimized check hold decisioning process, increasing efficiency by 79%
+          - Spearheaded marketing initiatives resulting in 36% increase in credit card sales and 42% growth in net DDA production
+    education:
+      - institution: College of Charleston
+        area: Economics
+        degree: BS
+        start_date: 2019
+        end_date: 2020
+        highlights:
+          - 'Distinguished Honors'
+
+      - institution: Drexel University
+        area: Computer Engineering
+        degree: BS
+        start_date: 2014
+        end_date: 2017
+        highlights:
+          - 'Distinguished Honors'
+
+design:
+  theme: classic
+  font: Source Sans 3
+  font_size: 10pt
+  page_size: letterpaper
+  color: '#0b1126'
+  disable_external_link_icons: false
+  disable_page_numbering: true
+  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  disable_last_updated_date: true
+  last_updated_date_style: Last updated in TODAY
+  header_font_size: 30 pt
+  text_alignment: justified
+  seperator_between_connections: ''
+  use_icons_for_connections: true
+  margins:
+    page:
+      top: 1 cm
+      bottom: 1 cm
+      left: 1 cm
+      right: 1 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0.2 cm
+      vertical_between: 0.2 cm
+      date_and_location_width: 4.5 cm
+      education_degree_width: 1 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 0.3 cm
+      bottom: 0.3 cm
+      horizontal_between_connections: 0.5 cm
+  show_timespan_in: []

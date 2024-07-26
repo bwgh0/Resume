@@ -1,0 +1,346 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=1 cm, % seperation between body and page edge from the top
+    bottom=1 cm, % seperation between body and page edge from the bottom
+    left=1 cm, % seperation between body and page edge from the left
+    right=1 cm, % seperation between body and page edge from the right
+    footskip=0.5 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage[explicit]{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{11, 17, 38} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Joe Roselli's CV},
+    pdfauthor={Joe Roselli},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage[default, type1]{sourcesanspro} 
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{
+    % avoid page braking right after the section title
+    \needspace{4\baselineskip}
+    % make the font size of the section title large and color it with the primary color
+    \Large\color{primaryColor}
+}{
+}{
+}{
+    % print bold title, give 0.15 cm space and draw a line of 0.8 pt thickness
+    % from the end of the title to the end of the body
+    \textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}
+}[] % section title formatting
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+% \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{1 cm, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-1 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-0.5 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in July 2024}\hspace{\widthof{Last updated in July 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{}
+
+    \begin{header}
+        \fontsize{30 pt}{30 pt}
+        \textbf{Joe Roselli}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}New York}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{mailto:jobs@inbox.vin}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}jobs@inbox.vin}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{tel:+1-201-579-3139}{{\footnotesize\faPhone*}\hspace*{0.13cm}(201) 579-3139}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://crypta.dev/}{{\footnotesize\faLink}\hspace*{0.13cm}crypta.dev}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/joe-roselli}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}joe-roselli}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://github.com/bwgh0}{{\footnotesize\faGithub}\hspace*{0.13cm}bwgh0}}%
+    \end{header}
+
+    \vspace{0.3 cm - 0.3 cm}
+
+
+    \section{Summary}
+
+
+
+        
+        \begin{onecolentry}
+            Senior Software Engineer and Blockchain Developer with 10+ years of experience. Architected systems managing $\mathdollar$2B+ in assets, boosted efficiencies by 86\%, and drove $\mathdollar$10M+ in blockchain transactions. Reduced costs by 30-40\% and generated 200\%+ revenue growth across fintech and blockchain projects. Proficient in 15+ programming languages and frameworks.
+        \end{onecolentry}
+
+
+    
+    \section{Skills}
+
+
+
+        
+        \begin{onecolentry}
+            \textbf{Languages:} Solidity, Python, JavaScript, TypeScript, Java, HTML5, CSS3, SQL, NoSQL, Swift
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Frameworks \& Libraries:} React, Node.js, Express.js, Django, Flask, TensorFlow, PyTorch, jQuery, Sass, TailwindCSS, Next.js
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Blockchain \& Cryptocurrency:} Ethereum, Bitcoin, Solana, Avalanche, Smart Contracts, DApps, Web3.js, Truffle, Brownie, Hardhat, MetaMask, NFTs, DeFi, Tokenization
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Data:} PostgreSQL, MySQL, MongoDB, Microsoft SQL Server, DynamoDB, Machine Learning, Artificial Intelligence, Tableau
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Cloud \& DevOps:} AWS (Lambda, EC2, S3, RDS, CloudFormation, Elastic Beanstalk, Amplify, SQS, SNS), Google Cloud Platform, Docker, Kubernetes, Jenkins, GitLab CI/CD, Terraform
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Tools \& Methodologies:} Git, JIRA, Confluence, Agile, Scrum, Kanban, Test-Driven Development (TDD), Continuous Integration/Continuous Deployment (CI/CD), Microservices Architecture, RESTful APIs, GraphQL
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Concepts:} Distributed Systems, Scalability, High Availability, Design Patterns, Algorithms, Large Language Models, Cloud Computing
+        \end{onecolentry}
+
+
+    
+    \section{Experience}
+
+
+
+        
+        \begin{twocolentry}{
+            Hoboken, NJ (Remote)
+
+        2020 – present
+        }
+            \textbf{Celsius Network}, Senior Software Engineer
+            \begin{highlights}
+                \item Architected a new CRM system and backend to manage a $\mathdollar$2B loan book, leveraging RPAs, Corezoid, and Mambu composable banking engine
+                \item Implemented an automated JavaScript margin call engine, boosting department efficiency by 86\%
+                \item Created a Coin Pricing System Oracle in Python using AWS Lambda and achieving 99.96\% price stability and accuracy for various cryptocurrencies
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            New York, NY (Remote)
+
+        2021 – 2023
+        }
+            \textbf{Axispoint}, Senior Blockchain Developer \& Software Engineer
+            \begin{highlights}
+                \item Designed and implemented on-chain and off-chain blockchain infrastructure for token data tracking
+                \item Authored smart contracts for Dynamic NFTs and NFT Marketplace, achieving 99.97\% test coverage and 9/10 Hacken security score
+                \item Developed a unique NFT land coordinate generation algorithm using Python, Brownie, AWS Lambda, and Moralis
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Pawleys Island, SC
+
+        2018 – 2020
+        }
+            \textbf{South State Bank}, Back End Developer
+            \begin{highlights}
+                \item Constructed CRM platform integrating ZenDesk, iTeller dashboards, and RPA systems using Java and PostgreSQL
+                \item Exceeded project time estimates by 18\% consistently through efficient development practices
+                \item Optimized check hold decisioning process, increasing efficiency by 79\%
+                \item Spearheaded marketing initiatives resulting in 36\% increase in credit card sales and 42\% growth in net DDA production
+            \end{highlights}
+        \end{twocolentry}
+
+
+
+    
+    \section{Education}
+
+
+
+        
+        \begin{threecolentry}{\textbf{BS}}{
+            2019 – 2020
+        }
+            \textbf{College of Charleston}, Economics
+            \begin{highlights}
+                \item Distinguished Honors
+            \end{highlights}
+        \end{threecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{threecolentry}{\textbf{BS}}{
+            2014 – 2017
+        }
+            \textbf{Drexel University}, Computer Engineering
+            \begin{highlights}
+                \item Distinguished Honors
+            \end{highlights}
+        \end{threecolentry}
+
+
+    
+
+\end{document}
