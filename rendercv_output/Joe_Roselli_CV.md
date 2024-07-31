@@ -8,13 +8,9 @@
 - GitHub: [bwgh0](https://github.com/bwgh0)
 
 
-# Summary
-
-Senior Software Engineer and Blockchain Developer with 10+ years of experience. Architected systems managing $\mathdollar$2B+ in assets, boosted efficiencies by 86%, and drove $\mathdollar$10M+ in blockchain transactions. Reduced costs by 30-40% and generated 200%+ revenue growth across fintech and blockchain projects. Proficient in 15+ programming languages and frameworks.
-
 # Skills
 
-- Languages: Solidity, Python, JavaScript, TypeScript, Java, HTML5, CSS3, SQL, NoSQL, Swift
+- Languages: Python, JavaScript, TypeScript, Solidity, Java, HTML5, CSS3, SQL, NoSQL, Swift
 - Frameworks & Libraries: React, Node.js, Express.js, Django, Flask, TensorFlow, PyTorch, jQuery, Sass, TailwindCSS, Next.js
 - Blockchain & Cryptocurrency: Ethereum, Bitcoin, Solana, Avalanche, Smart Contracts, DApps, Web3.js, Truffle, Brownie, Hardhat, MetaMask, NFTs, DeFi, Tokenization
 - Data: PostgreSQL, MySQL, MongoDB, Microsoft SQL Server, DynamoDB, Machine Learning, Artificial Intelligence, Tableau
@@ -35,17 +31,17 @@ Senior Software Engineer and Blockchain Developer with 10+ years of experience. 
 
 - 2021 – 2023
 - New York, NY (Remote)
-- Designed and implemented on-chain and off-chain blockchain infrastructure for token data tracking
-- Authored smart contracts for Dynamic NFTs and NFT Marketplace, achieving 99.97% test coverage and 9/10 Hacken security score
-- Developed a unique NFT land coordinate generation algorithm using Python, Brownie, AWS Lambda, and Moralis
+- Designed and implemented on-chain and off-chain blockchain infrastructure, improving token data tracking speed by 40% and reducing storage costs by 35%
+- Authored smart contracts for Dynamic NFTs and an NFT Marketplace, achieving 99.97% test coverage and 9/10 Hacken security scores, , facilitating $\mathdollar$10M in transactions
+- Innovated a unique NFT land coordinate generation algorithm using Python, Brownie, AWS Lambda, and Moralis, decreasing latency by 60% and increasing user engagement by 27%
 
 ## South State Bank, Back End Developer
 
 - 2018 – 2020
 - Pawleys Island, SC
-- Constructed CRM platform integrating ZenDesk, iTeller dashboards, and RPA systems using Java and PostgreSQL
-- Exceeded project time estimates by 18% consistently through efficient development practices
-- Optimized check hold decisioning process, increasing efficiency by 79%
+- Constructed an integrated CRM platform, integrating ZenDesk, iTeller dashboards, and RPA systems using Java and PostgreSQL, reducing customer response time by 50% and increasing satisfaction scores by 30%
+- Optimized development processes, consistently delivering projects 18% ahead of schedule and under budget
+- Redesigned check hold decisioning process, boosting efficiency by 79% and reducing errors by 60%
 - Spearheaded marketing initiatives resulting in 36% increase in credit card sales and 42% growth in net DDA production
 
 # Education

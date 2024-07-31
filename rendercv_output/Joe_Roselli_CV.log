@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.1)  26 JUL 2024 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.1)  29 JUL 2024 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -821,53 +821,19 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/bold/n' on input line 206.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
 (Font)              scaled to size 14.4pt on input line 206.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-12.
-
-(/opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/ti
-nytex-release/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-12.
-
-(/opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/ti
-nytex-release/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-212.
-
-(/opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/ti
-nytex-release/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-212.
-
-(/opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/ti
-nytex-release/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 212.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 212.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 212.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 223.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 212.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 223.
+(Font)              scaled to size 10.0pt on input line 212.
 
-Overfull \hbox (20.17354pt too wide) in paragraph at lines 253--254
+Overfull \hbox (20.17354pt too wide) in paragraph at lines 242--243
 []\T1/SourceSansPro-TLF/bold/n/10 Tools & Method-olo-gies: \T1/SourceSansPro-TL
 F/regular/n/10 Git, JIRA, Con-flu-ence, Ag-ile, Scrum, Kan-ban, Test-Driven De-
 vel-op-ment (TDD), Con-tin-u-ous In-te-gra-tion/Continuous
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-TLF o
-n input line 276.
+n input line 265.
 
 (/opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/ti
 nytex-release/TinyTeX/texmf-dist/tex/latex/sourcesanspro/TS1SourceSansPro-TLF.f
@@ -876,13 +842,47 @@ File: TS1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for TS1/So
 urceSansPro-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 276.
+(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 265.
 LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 276.
+(Font)              scaled to size 10.0pt on input line 265.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+65.
 
-Overfull \hbox (4.69048pt too wide) in paragraph at lines 292--293
-[]\T1/SourceSansPro-TLF/regular/n/10 Designed and im-ple-mented on-chain and of
-f-chain blockchain in-fras-truc-ture for to-ken data track-
+(/opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/ti
+nytex-release/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+65.
+
+(/opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/ti
+nytex-release/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+265.
+
+(/opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/ti
+nytex-release/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+265.
+
+(/opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/ti
+nytex-release/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 265.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 265.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 265.
+
+Overfull \hbox (14.93903pt too wide) in paragraph at lines 283--284
+[]\T1/SourceSansPro-TLF/regular/n/10 Innovated a unique NFT land co-or-di-nate 
+gen-er-a-tion al-go-rithm us-ing Python, Brownie, AWS Lambda,
  []
 
 [1
@@ -898,9 +898,9 @@ eX/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/opt/anaconda3/envs/re
 ndercv/lib/python3.11/site-packages/rendercv/renderer/tinytex-release/TinyTeX/t
 exmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/opt/anaconda3/envs/rend
 ercv/lib/python3.11/site-packages/rendercv/renderer/tinytex-release/TinyTeX/tex
-mf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/opt/anaconda3/envs/rendercv/lib/python3.
-11/site-packages/rendercv/renderer/tinytex-release/TinyTeX/texmf-dist/fonts/enc
-/dvips/sourcesanspro/a_5ponh6.enc}]
+mf-dist/fonts/enc/dvips/sourcesanspro/a_5ponh6.enc}{/opt/anaconda3/envs/renderc
+v/lib/python3.11/site-packages/rendercv/renderer/tinytex-release/TinyTeX/texmf-
+dist/fonts/enc/dvips/lm/lm-rm.enc}]
 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Joe_Roselli_CV.aux)
@@ -910,13 +910,13 @@ L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15839 strings out of 476002
- 290742 string characters out of 5788363
+ 15837 strings out of 476002
+ 290727 string characters out of 5788363
  1956496 words of memory out of 5000000
- 37729 multiletter control sequences out of 15000+600000
+ 37728 multiletter control sequences out of 15000+600000
  631761 words of font info for 63 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 75i,5n,79p,596b,811s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,369b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/
 tinytex-release/TinyTeX/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5
 Brands-Regular.pfb></opt/anaconda3/envs/rendercv/lib/python3.11/site-packages/r
@@ -930,10 +930,10 @@ ndercv/lib/python3.11/site-packages/rendercv/renderer/tinytex-release/TinyTeX/t
 exmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></opt/anaco
 nda3/envs/rendercv/lib/python3.11/site-packages/rendercv/renderer/tinytex-relea
 se/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb>
-Output written on Joe_Roselli_CV.pdf (1 page, 191017 bytes).
+Output written on Joe_Roselli_CV.pdf (1 page, 190780 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 70 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
